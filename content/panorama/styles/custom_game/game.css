@@ -1,0 +1,36 @@
+#GameHud {
+	width: 100%;
+	height: 100%;
+}
+
+#GameHud #LeftBottom {
+	vertical-align: bottom;
+}
+
+#LeftBottom #AbilitiesContainer {
+	vertical-align: bottom;
+	width: 68px;
+	flow-children: down;
+}
+
+#LeftBottom #HealthBuff {
+	vertical-align: bottom;
+	margin-left: 95px;
+	transform: translateY( 2px );
+	flow-children: down;
+}
+
+#LeftBottom #BuffsContainer {
+	min-width: 100%;
+	min-height: 30px;
+	margin-left: 5px; 
+	flow-children: right;
+}
+
+#LeftBottom #Background {
+	vertical-align: bottom;
+	background-image: url( "s2r://panorama/images/hud/reborn/right_flare_bg_psd.vtex" );
+	width: 115px;
+	height: 200px;
+	background-size: 100%;
+}

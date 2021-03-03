@@ -1,0 +1,162 @@
+#HeroSelectionHud {
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: right;
+}
+
+#HeroSelectionHud #HeroList {
+	vertical-align: center;
+	max-height: 100%;
+	flow-children: down-wrap;
+}
+
+#HeroSelectionHud .HeroForSelect {
+	width: 130px;
+	height: 73px;
+	margin: 4px;
+	border-radius: 4px;
+	box-shadow: black 0px 0px 5px 0px;
+}
+
+#HeroSelectionHud .HeroForSelect:hover {
+	box-shadow: white 0px 0px 5px 0px;
+}
+
+#HeroSelectionHud .HeroForSelect Image {
+	width: 100%;
+	height: 100%;
+}
+
+#HeroSelectionHud #HeroDetails {
+	margin-left: 10px;
+	width: 230px;
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #171A25dd  ), to( #171A25dd ) );
+	box-shadow: black 0px 0px 5px 0px;
+	flow-children: down;
+}
+
+#HeroSelectionHud #Header {
+	width: 100%;
+	height: 35px;
+	background-image: url( "file://{images}/backgrounds/background_play_button_2x.png" );
+}
+
+#HeroSelectionHud #HeroName {
+	horizontal-align: center;
+	vertical-align: center;
+	margin-top: 3px;
+	color: white;
+	font-family: Radiance;
+	font-size: 24px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+#HeroSelectionHud #HeroRow {
+	width: 100%;
+}
+
+#HeroSelectionHud #HeroPortrait {
+	width: 160px;
+	height: 200px;
+}
+
+#HeroSelectionHud #Abilities {
+	horizontal-align: right;
+	vertical-align: center;
+	padding: 4px;
+	flow-children: down;
+}
+
+#HeroSelectionHud #Shadow {
+	width: 100%;
+	height: 100%;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( black ), color-stop( 0.1, rgba( 0, 0, 0, 0 ) ), color-stop( 0.5, rgba( 0, 0, 0, 0 ) ), color-stop( 0.9, rgba( 0, 0, 0, 0 ) ), to( black ) );
+}
+
+#HeroSelectionHud .HeroAtr {
+	width: 100%;
+	height: 24px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+#HeroSelectionHud .HeroAtr.Light {
+	background-color: rgba( 0, 0, 0, 0.7 );
+}
+
+#HeroSelectionHud .HeroAtr Label {
+	vertical-align: center;
+	margin-top: 4px;
+	color: #9f9f9f;
+	font-size: 15px;
+	font-family: Radiance;
+	text-transform: uppercase;
+}
+
+#HeroSelectionHud .HeroAtr .Value {
+	horizontal-align: right;
+}
+
+#HeroSelectionHud #UniqueBonus {
+	width: 100%;
+	height: 110px;
+}
+
+#HeroSelectionHud #SelectButton {
+	horizontal-align: center;
+	padding: 4px 20px;
+	margin: 8px;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #404D65dd ), to( #2B3445dd ) );
+	border: 1px solid #494949;
+	width: 100%;
+	height: 35px;
+}
+
+#HeroSelectionHud #SelectButton:hover {
+	brightness: 2;
+}
+
+#HeroSelectionHud #SelectButton Label {
+	horizontal-align: center;
+	vertical-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-family: Radiance;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+#HeroSelectionHud #TeamPicks {
+	vertical-align: center;
+	flow-children: down;
+}
+
+#HeroSelectionHud .TeammatePick {
+	width: 200px;
+	padding: 6px;
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( black ), to( rgba( 0, 0, 0, 0 ) ) );
+}
+
+#HeroSelectionHud .TeammatePick Label {
+	vertical-align: center;
+	margin-left: 4px;
+	color: white;
+	font-family: Radiance;
+	font-size: 20px;
+}
+
+#HeroSelectionHud .TeammatePick Image {
+	horizontal-align: right;
+	vertical-align: center;
+	width: 75px;
+	height: 45px;
+	margin: 4px;
+	border-radius: 4px;
+	background-color: rgb( 44, 44, 44 );
+	saturation: 0;
+}
+
+#HeroSelectionHud .TeammatePick Image.Selected {
+	saturation: 1;
+}

@@ -1,0 +1,212 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/hud.css" />
+		<include src="file://{resources}/styles/custom_game/team_selection.css" />
+		<include src="file://{resources}/styles/custom_game/hero_selection.css" />
+		<include src="file://{resources}/styles/custom_game/ability.css" />
+		<include src="file://{resources}/styles/custom_game/buff.css" />
+		<include src="file://{resources}/styles/custom_game/health_bar.css" />
+		<include src="file://{resources}/styles/custom_game/death_screen.css" />
+		<include src="file://{resources}/styles/custom_game/top_bar.css" />
+		<include src="file://{resources}/styles/custom_game/scoreboard.css" />
+		<include src="file://{resources}/styles/custom_game/game.css" />
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/data/ability_images.js" />
+		<include src="file://{resources}/scripts/custom_game/utils.js" />
+		<include src="file://{resources}/scripts/custom_game/central_countdown.js" />
+		<include src="file://{resources}/scripts/custom_game/team_selection.js" />
+		<include src="file://{resources}/scripts/custom_game/hero_selection.js" />
+		<include src="file://{resources}/scripts/custom_game/game/ability_bar.js" />
+		<include src="file://{resources}/scripts/custom_game/game/buff_bar.js" />
+		<include src="file://{resources}/scripts/custom_game/game/health_bar.js" />
+		<include src="file://{resources}/scripts/custom_game/game/top_bar.js" />
+		<include src="file://{resources}/scripts/custom_game/game/death_screen.js" />
+		<include src="file://{resources}/scripts/custom_game/game/scoreboard.js" />
+		<include src="file://{resources}/scripts/custom_game/game.js" />
+		<include src="file://{resources}/scripts/custom_game/hud.js" />
+	</scripts>
+
+	<snippets>
+
+
+		<snippet name="BattleRoyaleTopBar">
+			<Panel>
+				<Panel id="AliveCountPanel">
+					<Panel id="AliveCountContainer"> 
+						<Label id="AliveCount" />
+					</Panel>
+					<Label id="AliveText" text="ALIVE" />
+				</Panel>
+			</Panel>
+		</snippet>
+
+		<snippet name="BattleRoyaleScoreboard">
+			<Panel>
+			</Panel>
+		</snippet>
+
+		<snippet name="DefaultDeathScreen">
+			<Panel class="DefaultDeathScreen">
+				<Label id="RespawnCountdown" />
+			</Panel>
+		</snippet>
+
+		<snippet name="DefaultTopBar">
+			<Panel class="DefaultTopBar">
+				<Panel id="Background" />
+				<Panel id="Content">
+					<Image id="FirstTeamLogo" class="TeamLogo" />
+					<Panel class="TeamScore">
+						<Label id="FirstTeamScore" text="0" />
+					</Panel>
+					<Panel id="TimeContainer">
+						<Label id="Time" />
+					</Panel>
+					<Panel class="TeamScore">
+						<Label id="SecondTeamScore" text="0" />
+					</Panel>
+					<Image id="SecondTeamLogo" class="TeamLogo" />
+				</Panel>
+			</Panel>
+		</snippet>
+
+		<snippet name="DefaultScoreboardPlayer">
+			<Panel class="Player">
+				<Panel id="ImageName">
+					<Image id="AvatarContainer" />
+					<Label id="PlayerName" />
+				</Panel>
+				<Panel id="Stats" />
+			</Panel>
+		</snippet>
+
+		<snippet name="DefaultScoreboardTeam">
+			<Panel class="Team">
+				<Panel id="Header">
+					<Panel id="ImageName">
+						<Image id="Logo" />
+						<Label id="TeamName" />
+					</Panel>
+					<Panel id="Stats" />
+				</Panel>
+				<Panel id="Players" />
+			</Panel>
+		</snippet>
+
+		<snippet name="TeamToSelect">
+			<Button class="TeamToSelect">
+				<Label id="TeamName" />
+				<Panel class="Tab" />
+				<Panel id="PlayersContainer" />
+			</Button>
+		</snippet>
+
+		<snippet name="Ability">
+			<Panel class="Ability">
+				<Image id="Image" defaultsrc="file://{images}/spellicons/empty.png" />
+				<Label id="ChargeCount" />
+				<Label id="Key" />
+				<Panel id="Cooldown" />
+			</Panel>
+		</snippet>
+
+		<snippet name="Buff">
+			<Panel class="Buff">
+				<Image id="Image" defaultsrc="file://{images}/spellicons/empty.png" />
+				<Label id="Countdown" />
+			</Panel>
+		</snippet>
+	</snippets>
+
+	<Panel class="Hud" hittest="false">
+		<Label id="CentralCountdown" class="Popup" />
+
+		<Panel id="TeamSelectionHud" class="Popup">
+			<Panel id="Unassigned" />
+			<Panel id="TeamsContainer" />
+			<Button id="ConfirmButton" onactivate="GameEvents.SendCustomGameEventToServer( 'team_selection_confirm', null )">
+				<Label id="ConfirmText" text="Confirm" />
+			</Button>
+		</Panel>
+
+		<Panel id="HeroSelectionHud" class="Popup">
+			<Panel id="HeroList" />
+			<Panel id="HeroDetails">
+				<Panel id="Header">
+					<Label id="HeroName" />
+				</Panel>
+				<Panel id="HeroRow">
+					<DOTAHeroMovie id="HeroPortrait" />
+					<Panel id="AttackTypeContainer">
+						<Label id="AttackType" />
+					</Panel>
+					<Panel id="Abilities">
+						<Panel class="Ability">
+							<Image id="AbilityImage_w" defaultsrc="file://{images}/spellicons/empty.png" />
+							<Label text="W" />
+						</Panel>
+						<Panel class="Ability">
+							<Image id="AbilityImage_s" defaultsrc="file://{images}/spellicons/empty.png" />
+							<Label text="S" />
+						</Panel>
+						<Panel class="Ability">
+							<Image id="AbilityImage_x" defaultsrc="file://{images}/spellicons/empty.png" />
+							<Label text="X" />
+						</Panel>
+					</Panel>
+					<Panel id="Shadow" />
+				</Panel>
+				<Panel class="HeroAtr">
+					<Label text="Width" />
+					<Label id="HeroAtr_width" class="Value" />
+				</Panel>
+				<Panel class="HeroAtr Light">
+					<Label text="Height" />
+					<Label id="HeroAtr_height" class="Value" />
+				</Panel>
+				<Panel class="HeroAtr">
+					<Label text="Health" />
+					<Label id="HeroAtr_health" class="Value" />
+				</Panel>
+				<Panel class="HeroAtr Light">
+					<Label text="Attack damage" />
+					<Label id="HeroAtr_attack_damage" class="Value" />
+				</Panel>
+				<Panel class="HeroAtr">
+					<Label text="Attack interval" />
+					<Label id="HeroAtr_attack_interval" class="Value" />
+				</Panel>
+				<Panel class="HeroAtr Light">
+					<Label text="Move speed" />
+					<Label id="HeroAtr_move_speed" class="Value" />
+				</Panel>
+				<Panel id="UniqueBonus">
+					<Label id="UniqueBonusDescription" />
+				</Panel>
+				<TextButton id="SelectButton" text="Select" onactivate="GameEvents.SendCustomGameEventToServer( 'hero_selection_select', null )" />
+			</Panel>
+			<Panel id="TeamPicks" />
+		</Panel>
+
+		<Panel id="GameHud" class="Popup" hittest="false">
+			<Panel id="DeathScreen" class="Popup" />
+			<Panel id="TopBar" class="Popup" />
+			<Panel id="Scoreboard" class="Popup" />
+
+			<Panel id="LeftBottom">
+				<Panel id="HealthBuff">
+					<Panel id="BuffsContainer" />
+					<Panel id="HealthBar">
+						<Panel id="MaxHealth">
+							<Panel id="CurrentHealth" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel id="Background" />
+				<Panel id="AbilitiesContainer" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

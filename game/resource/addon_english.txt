@@ -1,0 +1,15 @@
+"lang"
+{
+	"Language"		"English"
+	"Tokens"
+	{		
+		"addon_game_name"					"XZ"
+
+		"team_pvp_2"						"Zhang" //张
+		"team_pvp_1"						"Chi mei jun" //赤眉军
+
+		"scoreboard_stats_kills"			"K"
+		"scoreboard_stats_deaths"			"D"
+		"scoreboard_stats_assists"			"A"
+	}
+}

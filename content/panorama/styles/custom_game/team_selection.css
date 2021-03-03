@@ -1,0 +1,98 @@
+#TeamSelectionHud {
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: down;
+}
+
+#TeamSelectionHud #Unassigned {
+	horizontal-align: center;
+	margin: 20px;
+}
+
+#TeamSelectionHud #TeamsContainer {
+	flow-children: right;
+}
+
+#TeamSelectionHud .TeamToSelect {
+	margin: 6px;
+	padding: 3px;
+	box-shadow: black 0px 0px 5px 0px;
+	flow-children: down;
+}
+
+#TeamSelectionHud .TeamToSelect:hover {
+	box-shadow: white 0px 0px 5px 0px;
+}
+
+#TeamSelectionHud .Header {
+	width: 100%;
+	height: 23px;
+	flow-children: right;
+}
+
+#TeamSelectionHud #TeamName {
+	horizontal-align: center;
+	height: 30px;
+	font-size: 26px;
+	color: white;
+	font-family: Goudy Trajan Medium;
+	text-shadow: 0px 0px 2px 2.0 rgb( 22, 22, 22 );
+}
+
+#TeamSelectionHud .Tab {
+	width: 100%;
+	height: 2px;
+	margin: 2px;
+	background-color: rgba( 22, 22, 22, 0.9 );
+}
+
+#TeamSelectionHud #PlayersContainer {
+	flow-children: down;
+}
+
+#TeamSelectionHud .TeamSlot {
+	margin: 2px;
+	width: 250px;
+	height: 24px;
+	flow-children: right;
+}
+
+#TeamSelectionHud .Avatar {
+	width: 24px;
+	height: 24px;
+}
+
+#TeamSelectionHud .TeamSlot Label {
+	vertical-align: center;
+	margin-left: 3px;
+	margin-bottom: 1px;
+	height: 22px;
+	font-size: 22px;
+	color: white;
+	font-family: Radiance;
+	text-shadow: 0px 0px 1px 2.0 rgba( 22, 22, 22, 0.9 );
+}
+
+#TeamSelectionHud #ConfirmButton {
+	horizontal-align: center;
+	min-width: 200px;
+	margin: 20px;
+	padding: 2px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-image: url( "file://{images}/backgrounds/background_play_button_2x.png" );
+	background-color: rgba( 22, 22, 22, 0.6 );
+	box-shadow: black 0px 0px 5px 0px;
+}
+
+#TeamSelectionHud #ConfirmButton:hover {
+	box-shadow: white 0px 0px 4px 0px;
+}
+
+#TeamSelectionHud #ConfirmText {
+	horizontal-align: center;
+	color: rgb( 235, 235, 235 );
+	font-size: 25px;
+	font-family: Goudy Trajan Medium;
+	text-shadow: 0px 0px 1px 2.0 rgba( 22, 22, 22, 0.9 );
+}

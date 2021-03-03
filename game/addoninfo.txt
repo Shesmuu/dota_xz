@@ -1,0 +1,86 @@
+"AddonInfo"
+{
+	"maps"					"pvp"
+	"IsPlayable"			"1"
+	"PenaltiesEnabled"		"0"
+	"CheckAFKPlayers"		"0"
+
+	"pvp"
+	{
+		"MaxPlayers"		"4"
+	}
+
+	"Default_Keys"
+	{
+		"01"
+		{
+			"Key"			"D"
+			"Command"		"+pressed_d"
+		}
+		"02"
+		{
+			"Key"			"A"
+			"Command"		"+pressed_a"
+		}
+		"03"
+		{
+			"Key"			"W"
+			"Command"		"+pressed_w"
+		}
+		"04"
+		{
+			"Key"			"S"
+			"Command"		"+pressed_s"
+		}
+		"05"
+		{
+			"Key"			"X"
+			"Command"		"+pressed_x"
+		}
+		"06"
+		{
+			"Key"			"Space"
+			"Command"		"+pressed_space"
+		}
+		"07"
+		{
+			"Key"			"E"
+			"Command"		"+pressed_e"
+		}
+		"08"
+		{
+			"Key"			"1"
+			"Command"		"+pressed_1"
+		}
+		"09"
+		{
+			"Key"			"2"
+			"Command"		"+pressed_2"
+		}
+		"10"
+		{
+			"Key"			"3"
+			"Command"		"+pressed_3"
+		}
+		"11"
+		{
+			"Key"			"4"
+			"Command"		"+pressed_4"
+		}
+		"12"
+		{
+			"Key"			"5"
+			"Command"		"+pressed_5"
+		}
+		"13"
+		{
+			"Key"			"6"
+			"Command"		"+pressed_6"
+		}
+		"14"
+		{
+			"Key"			"TAB"
+			"Command"		"+pressed_tab"
+		}
+	}
+}

@@ -1,0 +1,140 @@
+"DOTAUnits"
+{
+	"npc_xz_dummy"	
+	{
+		"BaseClass"						"npc_dota_creature"
+		"Model"							"models/development/invisiblebox.vmdl"
+
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+	}
+
+	"npc_xz_test_unit"	
+	{
+		"BaseClass"						"npc_dota_creature"
+		"Model"							"models/heroes/slark/slark.vmdl"
+		"ModelScale" 					"1"
+
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+	}
+
+	"npc_xz_slark"	
+	{
+		"BaseClass"						"npc_dota_creature"
+		"Model"							"models/heroes/slark/slark.vmdl"
+		"ModelScale" 					"1"
+
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"			"353"
+				}
+				"Wearable2"
+				{
+					"ItemDef"			"355"
+				}
+				"Wearable3"
+				{
+					"ItemDef"			"356"
+				}
+				"Wearable4"
+				{
+					"ItemDef"			"354"
+				}
+				"Wearable5"
+				{
+					"ItemDef"			"336"
+				}
+			}
+		}
+	}
+
+	"npc_xz_mirana"	
+	{
+		"BaseClass"						"npc_dota_creature"
+		"Model"							"models/heroes/mirana/mirana.vmdl"
+		"ModelScale" 					"1"
+
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"			"403"
+				}
+				"Wearable2"
+				{
+					"ItemDef"			"408"
+				}
+				"Wearable3"
+				{
+					"ItemDef"			"406"
+				}
+				"Wearable4"
+				{
+					"ItemDef"			"405"
+				}
+				"Wearable5"
+				{
+					"ItemDef"			"404"
+				}
+				"Wearable6"
+				{
+					"ItemDef"			"409"
+				}
+				"Wearable5"
+				{
+					"ItemDef"			"407"
+				}
+			}
+		}
+	}
+
+	"npc_xz_bristleback"	
+	{
+		"BaseClass"						"npc_dota_creature"
+		"Model"							"models/heroes/bristleback/bristleback.vmdl"
+		"ModelScale" 					"1"
+
+		"AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"			"436"
+				}
+				"Wearable2"
+				{
+					"ItemDef"			"439"
+				}
+				"Wearable3"
+				{
+					"ItemDef"			"437"
+				}
+				"Wearable4"
+				{
+					"ItemDef"			"440"
+				}
+				"Wearable5"
+				{
+					"ItemDef"			"438"
+				}
+			}
+		}
+	}
+}

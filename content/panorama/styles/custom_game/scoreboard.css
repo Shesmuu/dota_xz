@@ -1,0 +1,72 @@
+.DefaultScoreboard {
+	horizontal-align: center;
+	vertical-align: center;
+	transition-duration: 0.2s;
+	flow-children: right;
+}
+
+.DefaultScoreboard Label {
+	vertical-align: center;
+	font-size: 22px;
+	color: white;
+	font-family: Radiance;
+}
+
+.DefaultScoreboard .Team {
+	margin: 6px;
+	box-shadow: black 0px 0px 5px 0px;
+	flow-children: down;
+}
+
+.DefaultScoreboard #Header {
+	flow-children: right;
+}
+
+.DefaultScoreboard #Header > Panel {
+	vertical-align: center;
+}
+
+.DefaultScoreboard #ImageName {
+	width: 220px;
+	flow-children: right;
+}
+
+.DefaultScoreboard #Logo {
+	width: 40px;
+	height: 40px;
+	margin: 4px;
+	box-shadow: black 0px 0px 3px 0px;
+}
+
+.DefaultScoreboard #Stats {
+	vertical-align: center;
+	flow-children: right;
+}
+
+.DefaultScoreboard #Stats Label {
+	color: white;
+}
+
+.DefaultScoreboard .Stat {
+	width: 40px;
+}
+
+.DefaultScoreboard .Stat Label {
+	horizontal-align: center;
+}
+
+.DefaultScoreboard #Players {
+	width: 100%;
+	flow-children: down;
+}
+
+.DefaultScoreboard .Player {
+	width: 100%;
+	flow-children: right;
+}
+
+.DefaultScoreboard #AvatarContainer {
+	width: 40px;
+	height: 40px;
+	margin: 4px;
+}

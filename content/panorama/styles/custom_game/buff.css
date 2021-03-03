@@ -1,0 +1,20 @@
+.Buff {
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgb( 22, 22, 188 );
+	margin-right: 5px;
+}
+
+.Buff.Debuff {
+	border: 1px solid purple;
+}
+
+.Buff #Image {
+	width: 100%;
+	height: 100%;
+}
+
+.Buff #Countdown {
+	vertical-align: bottom;
+	color: white;
+}
